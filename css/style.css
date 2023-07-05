@@ -7,7 +7,7 @@
     margin: 0;
     padding: 0;    
 }
-
+/* tags */
 body {
     color: red; 
   
@@ -29,18 +29,23 @@ h1, h2 {
   }
 
 h3 {
-font-size: 40px;
-text-align: center;
-text-decoration: none;
-padding: 10px 0;
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 0;
 }
 
 h4 {
-font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-font-size: 20px;
-text-align: center;
-padding: 10px 0px;
-margin: 0px auto;
+  color: white;
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0px;
+  margin: 0px auto;
+}
+h4:hover {
+  cursor: context-menu;
+  color: #243F4F;
 }
 
 p {
@@ -52,7 +57,8 @@ p {
 
 
 nav ul {
-  background-color: red;
+  /* background-color: #F5402A; */
+  background: linear-gradient(to right, #F5402A, black);
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
@@ -64,7 +70,6 @@ nav ul li {
   padding: 10px;
 }
 nav ul li a {
-
   text-decoration: none;  
   font-family: "Staatliches", cursive;
   font-size: 20px;
@@ -75,7 +80,7 @@ nav ul li a:hover {
 }
 
 
-
+/* classes */
 .section1 {
   background-image: url("../img/rhcp12.jpg"); 
   background-size: cover;
@@ -89,3 +94,65 @@ nav ul li a:hover {
   background-attachment: fixed;
 }
 
+.imgDiscografia {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footerAlign {
+  background: linear-gradient(to left, #F5402A, black);
+  height: 100%;
+  text-align: center;
+}
+
+.footerIcon {
+  width: 40px;
+  margin: 10px 0px;
+} 
+
+.div1 {
+  text-align: center;
+  padding: 20px;
+}
+
+.div2 {
+  text-align: center;
+  padding: 20px;
+}
+.div3 {
+  text-align: center;
+  padding: 20px;
+}
+.div4 {
+  text-align: center;
+  padding: 20px;
+}
+
+.showsMain {
+  background-image: url("../img/rhcpLogo2.jpg");
+  background-size: cover;
+}
+
+.formContacto {
+  display: flex;
+  flex-direction: row;
+  align-items: strech;
+  justify-content: space-around;
+  margin: auto;
+  padding: 30px 50px;
+  width: 70%;
+}
+.insideForm {
+  display: flex;
+  flex-direction: column;
+  align-items:normal;
+  margin: auto;
+}
+
+.divForm {
+  padding: 0 50px;
+}
+
+.divIframe {
+  padding: 0 50px;
+}
