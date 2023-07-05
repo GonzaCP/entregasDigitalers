@@ -1,17 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Staatliches&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+
 * {
     margin: 0;
     padding: 0;    
 }
 
-
-a {
-    color:blue;
+body {
+    color: red; 
+  
 }
 
-h1 {
-    color: red;
+h1, h2 {
+    font-family: "Bangers", cursive;
+    font-size: 70px;
+    font-weight: 500;
+    text-align: center;
+    width: 100%;
+    padding: 20px 0;
+    margin: 0 auto;
+  
+  }
+  h1:hover, h2:hover {
+    cursor: context-menu;
+    color: #243F4F;
+  }
+
+h3 {
+font-size: 40px;
+text-align: center;
+text-decoration: none;
+padding: 10px 0;
 }
 
-div {
-    margin: 10px;
+h4 {
+font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+font-size: 20px;
+text-align: center;
+padding: 10px 0px;
+margin: 0px auto;
 }
+
+p {
+  font-family: "Staatliches", cursive;
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 0;
+}
+
+
+nav ul {
+  background-color: red;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+
+} 
+nav ul li {
+  padding: 10px;
+}
+nav ul li a {
+
+  text-decoration: none;  
+  font-family: "Staatliches", cursive;
+  font-size: 20px;
+  color: white;
+}
+nav ul li a:hover {
+  color: #243F4F;
+}
+
+
+
+.section1 {
+  background-image: url("../img/rhcp12.jpg"); 
+  background-size: cover;
+  background-attachment: fixed;
+
+}
+
+.section2 {
+  background-image: url("../img/rhcp14.jpg"); 
+  background-size: cover;
+  background-attachment: fixed;
+}
+

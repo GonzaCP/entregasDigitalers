@@ -4,30 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/rhcpLogo.ico">   
     <title>CONTACTO</title>
 </head>
 <body>
     <header>
         <nav>
-            <div>
-                <a href="../index.html">
-                    <img src="../img/rhcpLogo.jpg" alt="logo principal del sitio">
-                </a>    
+            <div>              
                 <ul>
+                    <li>
+                        <a href="../index.html">
+                            <img src="../img/rhcpLogo.svg" alt="logo principal del sitio">
+                        </a>    
+                    </li>
                     <li>                             
-                        <a href="discografia.html">DISCOGRAFIA</a>
+                        <a href="./discografia.html">DISCOGRAFIA</a>
                     </li>
                     <li>
-                        <a href="shows.html">SHOWS</a>
+                        <a href="./shows.html">SHOWS</a>
                     </li>
                     <li>
-                        <a href="galeria.html">GALERIA</a>
+                        <a href="./galeria.html">GALERIA</a>
                     </li>
                     <li>
-                        <a href="contacto.html">CONTACTO</a>
+                        <a href="./contacto.html">CONTACTO</a>
                     </li>                  
                     <li>
-                        <a href="https://redhotchilipeppers.com/" target="_blank"> RED HOT</a>
+                        <a href="https://redhotchilipeppers.com/" target="_blank">RHCP</a>
                     </li>
                 </ul>
             </div>    
@@ -35,8 +38,41 @@
     </header>
 
     <main>
-        <h1>CONTACTANOS!</h1>
+        
+    <h1>CONTACTANOS!</h1>
+      
+   
+        <section>
+            <div>
+                <form action="ejemplo.php">
+                    <fieldset>                        
+                        <h2 >Completá con tus datos</h2>            
+                        <label for="name">Nombre y Apellido</label>
+                        <input type="text" id="name" placeholder="Felipón">
+                        <label for="correoElectronico">Email</label>
+                        <input type="email" id="correoElectronico" placeholder="ejemplo@feli.com.ar">                                                
+                        <label for="comentario">Dejanos tu mensaje</label>            
+                        <textarea name="" id="" cols="70" rows="10"></textarea>                                                  
+                        <input type="reset" value="Borrar todo">
+                        <input type="submit" value="Enviar mensaje">             
+                    </fieldset>
+                </form>              
+            </div> 
+            <div>
+                <h2>Encontranos en esta ubicación</h2>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7901599603715!2d-68.06056108464804!3d-38.95162197956227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1655419765628!5m2!1ses!2sar" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>          
+        </section>
+
+
+
     </main>
-    
+    <footer>
+        <h4>Seguinos en nuestras redes</h4>
+        <a href="https://twitter.com/redHotChiliPeppers" target="_blank">
+            <img src="../img/twitter.png" alt="logo de Twitter"></a>       
+        <a href="https://facebook.com/redHotChiliPeppers" target="_blank">
+            <img src="../img/facebook.png" alt="logo de Facebook"></a>                
+    </footer>
 </body>
 </html>
