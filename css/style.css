@@ -2,18 +2,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Bangers&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Boogaloo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200;400&display=swap');
 
 * {
     margin: 0;
-    padding: 0;    
+    padding: 0;  
+   
 }
-/* tags */
-body {
-    color: red; 
-  
+
+header {
+  background-color: #272727;
+}
+footer {
+  background-color: #272727;
+}
+
+main {
+  background-image: url("../img/rhcpFondo3.jpg");
+  background-size: cover;  
+  color: white;
 }
 
 h1, h2 {
+    /* background: linear-gradient(to right, black, #F5402A, black);  */
+    color: white;
     font-family: "Bangers", cursive;
     font-size: 70px;
     font-weight: 500;
@@ -21,18 +33,21 @@ h1, h2 {
     width: 100%;
     padding: 20px 0;
     margin: 0 auto;
-  
+      
   }
-  h1:hover, h2:hover {
+  h1:hover {
     cursor: context-menu;
-    color: #243F4F;
+    color: #A63C45;
   }
 
 h3 {
-  font-size: 40px;
-  text-align: center;
+  width: 300px;
+  font-family: "Bangers", cursive;
+  color: white;
+  font-size: 40px; 
   text-decoration: none;
-  padding: 10px 0;
+  padding: 30px 30PX;
+  text-align: center;
 }
 
 h4 {
@@ -45,62 +60,105 @@ h4 {
 }
 h4:hover {
   cursor: context-menu;
-  color: #243F4F;
+  color: #A63C45;
+}
+h5 {
+  color: white;
+  font-family: "Bangers", cursive;
+  font-size: 30px;
 }
 
-p {
-  font-family: "Staatliches", cursive;
-  text-align: center;
+p {  
   font-size: 25px;
-  margin-bottom: 0;
+  color: white;
 }
 
+nav {
+  padding: 15px 0;
+}
 
-nav ul {
-  /* background-color: #F5402A; */
-  background: linear-gradient(to right, #F5402A, black);
+ nav ul {
+  list-style: none; 
   display: flex;
   flex-wrap: nowrap;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   height: 100px;
+  margin-bottom: 0;
+}  
 
-} 
 nav ul li {
   padding: 10px;
-}
+} 
+
 nav ul li a {
   text-decoration: none;  
   font-family: "Staatliches", cursive;
   font-size: 20px;
   color: white;
-}
+} 
+
 nav ul li a:hover {
-  color: #243F4F;
+  color: #A63C45;
+} 
+
+.btn-primary1 {
+  color: white;
+  font-family: "Bangers", cursive;
+  background-color: #272727;
+}
+.btn-primary1:hover{
+  color: #A63C45;
 }
 
 
 /* classes */
-.section1 {
-  background-image: url("../img/rhcp12.jpg"); 
-  background-size: cover;
-  background-attachment: fixed;
 
+/* index */
+.section1 { 
+  display: grid;
+  grid-template-columns: 300px 1000px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 80px;
+  grid-row-gap: 0px;
+  padding: 50px 100px;
+  
+  
+}
+.carouselSize {
+  height: 400px;
+  width: 400px;
 }
 
-.section2 {
-  background-image: url("../img/rhcp14.jpg"); 
-  background-size: cover;
-  background-attachment: fixed;
-}
-
-.imgDiscografia {
+.section2 { 
   display: flex;
-  flex-wrap: wrap;
+  padding: 50px 100px;
+  flex-direction: row-reverse;
+  justify-content: space-evenly;
+
+}
+
+.bgColor {
+  position:relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  word-wrap: break-word;
+  background-color: none;
+  background-clip: border-box; 
+
+}
+
+
+
+.section3 {
+  display: flex;
+  padding: 20px;
+  text-align: center;
+  padding: 50px 10px 50px 100px;
 }
 
 .footerAlign {
-  background: linear-gradient(to left, #F5402A, black);
   height: 100%;
   text-align: center;
 }
@@ -110,28 +168,19 @@ nav ul li a:hover {
   margin: 10px 0px;
 } 
 
-.div1 {
-  text-align: center;
-  padding: 20px;
+
+/*          SHOWS              */
+
+.showsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  padding: 50px  50px 50px 100px;
 }
 
-.div2 {
-  text-align: center;
-  padding: 20px;
-}
-.div3 {
-  text-align: center;
-  padding: 20px;
-}
-.div4 {
-  text-align: center;
-  padding: 20px;
-}
-
-.showsMain {
-  background-image: url("../img/rhcpLogo2.jpg");
-  background-size: cover;
-}
+/* contacto */
 
 .formContacto {
   display: flex;
@@ -155,4 +204,40 @@ nav ul li a:hover {
 
 .divIframe {
   padding: 0 50px;
+}
+
+
+
+/* discografia */
+
+.imgDiscografia {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-column-gap: 50px;
+  grid-row-gap: 50px;
+  padding: 20px 20px 20px 50px;
+}
+
+.disc1 {   
+  grid-area: 1 / 1 / 2 / 2;  
+}
+.disc2 {
+  grid-area: 1 / 2 / 2 / 3; 
+}
+.disc3 {
+  grid-area: 2 / 1 / 3 / 2; 
+}
+.disc4 {
+  grid-area: 2 / 2 / 3 / 3; 
+}
+.disc5 {
+  grid-area: 3 / 1 / 4 / 3;  
+}
+.disc6 {
+  grid-area: 3 / 2 / 4 / 3; 
+}
+
+@media only screen and (max-width: 768px) {
+  
 }
