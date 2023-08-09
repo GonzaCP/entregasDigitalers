@@ -11,20 +11,19 @@
 }
 
 header {
-  background-color: #272727;
+  background-color: black;
 }
 footer {
-  background-color: #272727;
+  background-color: black;
 }
 
 main {
-  background-image: url("../img/rhcpFondo3.jpg");
+  background-color: #020F0C; 
   background-size: cover;  
   color: white;
 }
 
-h1, h2 {
-    /* background: linear-gradient(to right, black, #F5402A, black);  */
+h1, h2 {    
     color: white;
     font-family: "Bangers", cursive;
     font-size: 70px;
@@ -32,19 +31,14 @@ h1, h2 {
     text-align: center;
     width: 100%;
     padding: 20px 0;
-    margin: 0 auto;
-      
-  }
-  h1:hover {
-    cursor: context-menu;
-    color: #A63C45;
+    margin: 0 auto;      
   }
 
-h3 {
+h3 { 
   width: 300px;
   font-family: "Bangers", cursive;
   color: white;
-  font-size: 40px; 
+  font-size: 50px; 
   text-decoration: none;
   padding: 30px 30PX;
   text-align: center;
@@ -69,6 +63,7 @@ h5 {
 }
 
 p {  
+  font-family: "Bangers", cursive;
   font-size: 25px;
   color: white;
 }
@@ -106,36 +101,53 @@ nav ul li a:hover {
   color: white;
   font-family: "Bangers", cursive;
   background-color: #272727;
+  border: 3px solid #000;
+  border-radius: 10px;
 }
 .btn-primary1:hover{
   color: #A63C45;
+}
+
+.bangersFont {
+  color: white;
+  font-family: "Bangers", cursive;
+  background-color: #272727;
+  border: 3px solid #000;
+  border-radius: 10px;
 }
 
 
 /* classes */
 
 /* index */
+
 .section1 { 
   display: grid;
-  grid-template-columns: 300px 1000px;
+  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 1fr;
-  grid-column-gap: 80px;
+  grid-column-gap: 20px;
   grid-row-gap: 0px;
-  padding: 50px 100px;
-  
-  
+  padding: 50px; 
 }
 .carouselSize {
   height: 400px;
   width: 400px;
+}
+.div11 {
+  grid-area: 1 / 1 / 2 / 2;  
+}
+.div12 {
+  grid-area: 1 / 2 / 2 / 3;
+}
+.div13 {
+  grid-area: 1 / 3 / 2 / 4;
 }
 
 .section2 { 
   display: flex;
   padding: 50px 100px;
   flex-direction: row-reverse;
-  justify-content: space-evenly;
-
+  justify-content: space-evenly;  
 }
 
 .bgColor {
@@ -146,14 +158,14 @@ nav ul li a:hover {
   word-wrap: break-word;
   background-color: none;
   background-clip: border-box; 
-
+}
+.imgCardHeight {
+  height: 150px;
+  width: 250px;
 }
 
-
-
 .section3 {
-  display: flex;
-  padding: 20px;
+  display: flex;  
   text-align: center;
   padding: 50px 10px 50px 100px;
 }
@@ -169,55 +181,21 @@ nav ul li a:hover {
 } 
 
 
-/*          SHOWS              */
-
-.showsList {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-column-gap: 40px;
-  grid-row-gap: 30px;
-  padding: 50px  50px 50px 100px;
-}
-
-/* contacto */
-
-.formContacto {
-  display: flex;
-  flex-direction: row;
-  align-items: strech;
-  justify-content: space-around;
-  margin: auto;
-  padding: 30px 50px;
-  width: 70%;
-}
-.insideForm {
-  display: flex;
-  flex-direction: column;
-  align-items:normal;
-  margin: auto;
-}
-
-.divForm {
-  padding: 0 50px;
-}
-
-.divIframe {
-  padding: 0 50px;
-}
-
-
-
 /* discografia */
 
-.imgDiscografia {
+.imgUbication{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-column-gap: 50px;
   grid-row-gap: 50px;
-  padding: 20px 20px 20px 50px;
+  padding: 50px 0px 50px 100px;
 }
+.imgSize {
+  height: 400px;
+  width: 600px;
+}
+
 
 .disc1 {   
   grid-area: 1 / 1 / 2 / 2;  
@@ -238,6 +216,116 @@ nav ul li a:hover {
   grid-area: 3 / 2 / 4 / 3; 
 }
 
-@media only screen and (max-width: 768px) {
+
+
+/*          SHOWS              */
+
+.showsList {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-column-gap: 40px;
+  grid-row-gap: 30px;
+  padding: 50px  50px 50px 100px;
+}
+
+.flagsSize {
+  height: 200px;
+  width: 300px;
+
+}
+
+/* contacto */
+
+.formContacto {
+  font-family: "Bangers", cursive;
+  display: flex;
+  flex-direction: row;
+  align-items: strech;
+  justify-content: space-around;
+  margin: auto;
+  padding: 30px 10px;
+  width: 70%;
+}
+.insideForm {
+  border-radius: 10px;  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items:normal;
+  margin: auto;
+}
+
+.divForm {
+  padding: 0 50px;
+}
+
+.divIframe {
+  padding: 0 50px;
+}
+
+
+
+
+
+
+
+
+@media only screem and (max-width: 1200px) {
   
 }
+
+@media only screem and (max-width: 1024px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  h1, h2 {        
+    font-size: 50px;  
+  }
+
+  h3 { 
+    font-size: 30px;   
+    padding: 5px; 
+    width: 110px; 
+  }
+
+  h4 { 
+    font-size: 20px; 
+  }
+
+  h5 {
+    font-size: 25px;
+  }
+
+  p {  
+    font-family: "Bangers", cursive;
+    font-size: 20px;
+    color: white;
+  }
+
+  nav {
+    padding: 15px 0px;
+  }
+
+  nav ul {     
+    justify-content: space-evenly;   
+    height: 80px;
+    padding-right: 40px;  
+  }  
+
+  nav ul li a { 
+    font-size: 15px; 
+  } 
+
+
+ 
+
+
+ 
+  }
+  
+  @media only screem and (max-width: 1024px) {
+  
+  }
