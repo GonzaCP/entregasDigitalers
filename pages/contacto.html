@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">    
-    <link rel="shortcut icon" href="../img/rhcpLogo2.ico">  
+    <link rel="shortcut icon" href="../img/rhcpLogo_1.webp">  
     <!-- bootstrap link css -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">   
     <link rel="stylesheet" href="../css/style.css"> 
@@ -22,7 +22,7 @@
                     </li>
                     <li>
                         <a href="../index.html">
-                            <img src="../img/rhcpLogo101.png" alt="logo principal del sitio">
+                            <img src="../img/rhcpLogo101.png" alt="logo principal del sitio" class="logoSize">
                         </a>                         
                     </li>                    
                     <li>
@@ -35,19 +35,18 @@
             </div>    
         </nav>       
     </header> 
-    <main>
-        
-<!--     <h1>CONTACTANOS!</h1>  -->
+    <main>      
         <section class="formContacto">
             <div class="divForm">
-                <form action="ejemplo.php">
-                    <h2>HACENOS LLEGAR TU MENSAJE</h2>   
+                <h2>HACENOS LLEGAR TU MENSAJE</h2>   
+                <form action="ejemplo.php">                  
                     <fieldset class="insideForm">                      
                         <label for="name" class="bangersFont">Nombre y Apellido</label>
                         <input type="text" id="name" class="bangersFont">
                         <label for="correoElectronico" class="bangersFont">Email</label>
                         <input type="email" id="correoElectronico" class="bangersFont">                                                
-                        <label for="comentario" class="bangersFont">Dejanos tu mensaje</label>            
+                        <label for="comentario" class="bangersFont">Dejanos tu mensaje</label>  
+                        <!-- <input type="text" class="form-control bangersFont"/>           -->
                         <textarea name="" id="" cols="70" rows="9" class="bangersFont"></textarea>                                                  
                         <input type="reset" value="Borrar todo" class="btn-primary1">
                         <input type="submit" value="Enviar mensaje" class="btn-primary1">                                 
@@ -55,9 +54,9 @@
                 </form>              
             </div> 
             <aside>
-                <div class="divIframe">
-                    <h2>Encontranos en esta ubicación</h2>
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7901599603715!2d-68.06056108464804!3d-38.95162197956227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1655419765628!5m2!1ses!2sar" width="500" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h2>Acercate a nuestra comunidad</h2>      
+                <div class="divIframe">                                 
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3102.7901599603715!2d-68.06056108464804!3d-38.95162197956227!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x960a33196ae9bf47%3A0x8935eaa087a2d345!2sMood%20Live!5e0!3m2!1ses!2sar!4v1655419765628!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="iframeWidth"></iframe>
                 </div> 
             </aside>         
         </section>

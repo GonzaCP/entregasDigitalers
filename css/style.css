@@ -5,9 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Handjet:wght@200;400&display=swap');
 
 * {
-    margin: 0;
-    padding: 0;  
-   
+  margin: 0;
+  padding: 0;     
 }
 
 header {
@@ -16,34 +15,30 @@ header {
 footer {
   background-color: black;
 }
-
 main {
   background-color: #020F0C; 
   background-size: cover;  
   color: white;
 }
-
-h1, h2 {    
-    color: white;
-    font-family: "Bangers", cursive;
-    font-size: 70px;
-    font-weight: 500;
-    text-align: center;
-    width: 100%;
-    padding: 20px 0;
-    margin: 0 auto;      
-  }
-
+h1, h2 {  
+  color: white;
+  font-family: "Bangers", cursive;
+  font-size: 70px;
+  font-weight: 500;
+  text-align: center;
+  width: 100%;
+  padding: 20px 0px;
+  margin: 0 auto;      
+}
 h3 { 
   width: 300px;
   font-family: "Bangers", cursive;
   color: white;
   font-size: 50px; 
   text-decoration: none;
-  padding: 30px 30PX;
+  padding: 30px 30px;
   text-align: center;
 }
-
 h4 {
   color: white;
   font-family: "Staatliches", cursive;
@@ -61,18 +56,15 @@ h5 {
   font-family: "Bangers", cursive;
   font-size: 30px;
 }
-
 p {  
   font-family: "Bangers", cursive;
   font-size: 25px;
   color: white;
 }
-
 nav {
   padding: 15px 0;
 }
-
- nav ul {
+nav ul {
   list-style: none; 
   display: flex;
   flex-wrap: nowrap;
@@ -80,23 +72,24 @@ nav {
   align-items: center;
   height: 100px;
   margin-bottom: 0;
-}  
-
+  padding-right: 30px;
+}
 nav ul li {
   padding: 10px;
 } 
-
 nav ul li a {
   text-decoration: none;  
   font-family: "Staatliches", cursive;
   font-size: 20px;
   color: white;
 } 
-
 nav ul li a:hover {
   color: #A63C45;
 } 
-
+.logoSize {
+  height: 100px;
+  width: 140px;
+}
 .btn-primary1 {
   color: white;
   font-family: "Bangers", cursive;
@@ -107,7 +100,6 @@ nav ul li a:hover {
 .btn-primary1:hover{
   color: #A63C45;
 }
-
 .bangersFont {
   color: white;
   font-family: "Bangers", cursive;
@@ -116,10 +108,7 @@ nav ul li a:hover {
   border-radius: 10px;
 }
 
-
-/* classes */
-
-/* index */
+/* classes */   /* index */
 
 .section1 { 
   display: grid;
@@ -130,8 +119,8 @@ nav ul li a:hover {
   padding: 50px; 
 }
 .carouselSize {
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 500px;
 }
 .div11 {
   grid-area: 1 / 1 / 2 / 2;  
@@ -142,14 +131,12 @@ nav ul li a:hover {
 .div13 {
   grid-area: 1 / 3 / 2 / 4;
 }
-
 .section2 { 
   display: flex;
   padding: 50px 100px;
   flex-direction: row-reverse;
   justify-content: space-evenly;  
 }
-
 .bgColor {
   position:relative;
   display: flex;
@@ -163,25 +150,32 @@ nav ul li a:hover {
   height: 150px;
   width: 250px;
 }
-
 .section3 {
   display: flex;  
   text-align: center;
   padding: 50px 10px 50px 100px;
 }
-
+.iframeDiv {
+  width: 800px;
+  height: 400px;
+  padding-left: 150px;
+}
+.iframeWidth {
+  height: 100%;
+  width: 100%;
+  border: 3px solid #000;
+  border-radius: 10px;
+}
 .footerAlign {
   height: 100%;
   text-align: center;
 }
-
 .footerIcon {
   width: 40px;
   margin: 10px 0px;
 } 
 
-
-/* discografia */
+/* classes */     /* discografia */
 
 .imgUbication{
   display: grid;
@@ -195,8 +189,6 @@ nav ul li a:hover {
   height: 400px;
   width: 600px;
 }
-
-
 .disc1 {   
   grid-area: 1 / 1 / 2 / 2;  
 }
@@ -217,8 +209,7 @@ nav ul li a:hover {
 }
 
 
-
-/*          SHOWS              */
+/* classes */     /*    SHOWS      */
 
 .showsList {
   display: grid;
@@ -228,14 +219,12 @@ nav ul li a:hover {
   grid-row-gap: 30px;
   padding: 50px  50px 50px 100px;
 }
-
 .flagsSize {
   height: 200px;
   width: 300px;
-
 }
 
-/* contacto */
+/* classes */     /* contacto */
 
 .formContacto {
   font-family: "Bangers", cursive;
@@ -255,77 +244,443 @@ nav ul li a:hover {
   align-items:normal;
   margin: auto;
 }
-
-.divForm {
-  padding: 0 50px;
+.form-control {
+  width: 100%;
+  height: 200px;
 }
-
+.divForm {
+  padding: 0 50px;   
+}
 .divIframe {
   padding: 0 50px;
+  height: 400px;
+  width: 600px;
 }
 
 
+/* @media queries */
 
+@media only screen and (max-width: 1200px) {
+  h1, h2 {
+    font-size: 60px;
+  }
+  h3 {
+    font-size: 35px;
+    width: 250px;
+    padding: 20px;
+  }
+  h4 {   
+    font-size: 18px;   
+  }
+  h5 {   
+    font-size: 25px;
+  }
+  p {      
+    font-size: 20px;
+  }
+  nav {
+    padding: 10px 0;
+  }
+  nav ul {
+    justify-content: space-evenly;
+    padding-right: 80px; 
+  }
+  nav ul li {
+    padding: 10px;
+  } 
+  nav ul li a {   
+    font-size: 18px;  
+  } 
 
+  .logoSize {
+    height: 90px;
+    width: 130px;
+  }
 
+  /* classes */   /* index */
 
-
-
-@media only screem and (max-width: 1200px) {
+  .section1 {  
+    grid-column-gap: 10px;
+    padding: 25px 50px 25px 25px; 
+  }
+  .carouselSize {
+    height: 200px;
+    width: 350px;   
+  }
+  .section2 { 
+  padding: 20px 50px;
+  }
+  .imgCardHeight {
+    height: 130px;
+    width: 220px;
+  }
+  .section3 {    
+    padding: 30px 10px 30px 40px;
+  }
+  .iframeDiv {
+    width: 700px;
+    height: 300px;
+    padding-left: 50px;   
+  }
   
+  /* classes */     /* discografia */
+
+  .imgUbication{  
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+    padding: 50px 0px 50px 80px;
+  }
+  .imgSize {
+    height: 250px;
+    width: 400px;
+  }
+
+  /* classes */     /*    SHOWS      */
+
+  .showsList { 
+    grid-column-gap: 20px;
+    grid-row-gap: 20px;
+    padding: 50px  20px 50px 150px;
+  }
+  .flagsSize {
+    height: 150px;
+    width: 230px;
+  }
+
+  /* classes */     /* contacto */
+
+  /*CAMBIAR ESTOS VALORES */
+
+  .formContacto {  
+    padding: 30px 10px;
+    width: 70%;
+  }
+  .insideForm {
+    border-radius: 10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:normal;
+    margin: auto;
+  }
+  .form-control {
+    width: 100%;
+    height: 200px;
+  }
+  .divForm {
+    padding: 0 50px;   
+  }
+  .divIframe {
+    padding: 0 50px;
+    height: 400px;
+    width: 600px;
+  }
+
 }
 
-@media only screem and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {
+  h1, h2 {
+    font-size: 50px;
+  }
+  h3 {
+    font-size: 30px;
+    width: 220px;
+    padding: 15px;
+  }
+  h4 {   
+    font-size: 16px;   
+  }
+  h5 {   
+    font-size: 20px;
+  }
+  p {      
+    font-size: 17px;
+  }
+  nav {
+    padding: 7px 0;
+  }
+  nav ul {
+    justify-content: space-evenly;
+    padding-right: 50px; 
+  }
+  nav ul li a {   
+    font-size: 17px;  
+  } 
+
+  .logoSize {
+    height: 80px;
+    width: 115px;
+  }
+
+  /* classes */   /* index */
+
+  .section1 {  
+    grid-column-gap: 10px;
+    padding: 20px 40px 20px 20px; 
+  }
+  .carouselSize {
+    height: 170px;
+    width: 300px;   
+  }
+  .section2 { 
+  padding: 15px 40px;
+  }
+  .imgCardHeight {
+    height: 100px;
+    width: 180px;
+  }
+  .section3 {    
+    padding: 25px 10px 40px 30px;
+  }
+  .iframeDiv {
+    width: 600px;
+    height: 250px;
+    padding-left: 50px;   
+  }
+  
+  /* classes */     /* discografia */
+
+  .imgUbication{  
+    grid-column-gap: 20px;
+    padding: 40px 0px 40px 60px;
+  }
+  .imgSize {
+    height: 200px;
+    width: 350px;
+  }
+
+/* classes */     /*    SHOWS      */
+
+  .showsList { 
+    grid-column-gap: 10px;
+    padding: 40px  20px 50px 120px;
+  }
+
+  /* classes */     /* contacto */
+
+  /*CAMBIAR ESTOS VALORES */
+
+  .formContacto {  
+    padding: 30px 10px;
+    width: 70%;
+  }
+  .insideForm {
+    border-radius: 10px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:normal;
+    margin: auto;
+  }
+  .form-control {
+    width: 100%;
+    height: 200px;
+  }
+  .divForm {
+    padding: 0 50px;   
+  }
+  .divIframe {
+    padding: 0 50px;
+    height: 400px;
+    width: 600px;
+  }
 
 }
 
 @media only screen and (max-width: 768px) {
-
-  h1, h2 {        
-    font-size: 50px;  
+  h1, h2 {
+    font-size: 40px;
   }
-
-  h3 { 
-    font-size: 30px;   
-    padding: 5px; 
-    width: 110px; 
-  }
-
-  h4 { 
-    font-size: 20px; 
-  }
-
-  h5 {
-    font-size: 25px;
-  }
-
-  p {  
-    font-family: "Bangers", cursive;
+  h3 {
     font-size: 20px;
-    color: white;
+    width: 150px;
+    padding: 10px;
   }
-
+  h4 {   
+    font-size: 16px;   
+  }
+  h5 {   
+    font-size: 20px;
+  }
+  p {      
+    font-size: 17px;
+  }
   nav {
-    padding: 15px 0px;
+    padding: 7px 0;
   }
-
-  nav ul {     
-    justify-content: space-evenly;   
-    height: 80px;
-    padding-right: 40px;  
-  }  
-
-  nav ul li a { 
-    font-size: 15px; 
+  nav ul {
+    justify-content: space-evenly;
+    padding-right: 50px; 
+  }
+  nav ul li a {   
+    font-size: 15px;  
   } 
 
+  .logoSize {
+    height: 70px;
+    width: 100px;
+  }
+  .btn-primary1 {    
+    line-height: 1;
+    height: 33px;    
+  }  
 
- 
+  /* classes */   /* index */
 
-
- 
+  .section1 { 
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 130px 1fr;
+    grid-column-gap: 50px;
+    grid-row-gap: 30px;
+    padding: 20px 50px 20px 100px; 
+  }
+  .carouselSize {
+    height: 170px;
+    width: 300px;      
+  }
+  .div11 {
+    grid-area: 1 / 1 / 2 / 2;
+    padding-left: 60px;
+  } 
+  .div12 {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+  .div13 {
+    grid-area: 2 / 1 / 3 / 3;
+    width: 550px;
+    padding-left: 130px;
+  }
+  .section2 { 
+  padding: 15px 40px;
+  }
+  .imgCardHeight {
+    height: 70px;
+    width: 140px;
+  }
+  .iframeDiv {
+    width: 500px;
+    height: 200px; 
   }
   
-  @media only screem and (max-width: 1024px) {
-  
+  /* classes */     /* discografia */
+
+  .imgUbication{  
+    grid-column-gap: 20px;
+    padding: 30px 0px 40px 50px;
   }
+  .imgSize {
+    height: 150px;
+    width: 300px;
+  }
+
+/* classes */     /*    SHOWS      */
+
+  .showsList { 
+    grid-column-gap: 10px;
+    padding: 30px  20px 50px 100px;
+  }
+  .flagsSize {
+    height: 120px;
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 576px) {
+  h1, h2 {
+    font-size: 30px;
+  }
+  h3 {
+    font-size: 15px;
+    width: 120px;
+    padding: 10px;
+  }
+  h4 {   
+    font-size: 14px;   
+  }
+  h5 {   
+    font-size: 15px;
+  }
+  p {      
+    font-size: 15px;
+  }
+  nav {
+    padding: 7px 0;
+  }
+  nav ul {
+    justify-content: space-evenly;
+    padding-right: 30px; 
+  }
+  nav ul li a {   
+    font-size: 13px;  
+  } 
+
+  .logoSize {
+    height: 50px;
+    width: 70px;
+  }
+  .btn-primary1 {    
+    line-height: 1;
+    height: 30px;  
+    font-size: 12px;  
+  }  
+
+  /* classes */   /* index */
+
+  .section1 {    
+    grid-template-rows: 100px 1fr;
+    grid-column-gap: 20px;
+    grid-row-gap: 15px;
+    padding: 20px 50px 20px 20px; 
+  }
+  .carouselSize {
+    height: 150px;
+    width: 270px;      
+  }
+  .div11 {    
+    padding-left: 80px;
+  }  
+  .div13 {    
+    width: 500px;
+    padding-left: 100px;
+  }
+  .section2 { 
+  padding: 15px 20px;
+  }
+  .imgCardHeight {
+    height: 50px;
+    width: 110px;
+  }
+  .iframeDiv {
+    width: 350px;
+    height: 150px; 
+  }
+  .footerIcon {
+    width: 30px;
+    margin: 5px 0px;
+  } 
+  
+  /* classes */     /* discografia */
+
+  .imgUbication{  
+    grid-column-gap: 20px;
+    padding: 20px 0px 30px 40px;
+  }
+  .imgSize {
+    height: 100px;
+    width: 230px;
+  }
+
+/* classes */     /*    SHOWS      */
+
+  .showsList {     
+    padding: 30px 20px 20px 50px;
+  }
+  .flagsSize {
+    height: 100px;
+    width: 160px;
+  }
+
+}
+  
